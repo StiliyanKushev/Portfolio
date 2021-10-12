@@ -1,0 +1,264 @@
+header {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+header nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, nav, ul {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav li {
+    margin: 1.3rem 2rem;
+    padding: .2rem;
+}
+
+header nav li.selected {
+    border-bottom: 1px solid black;
+}
+
+main {
+    background: rgb(85,94,219);
+    background: linear-gradient(120deg, rgba(85,94,219,1) 0%, rgba(87,118,227,1) 35%, rgba(94,194,245,1) 100%);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    color: white;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+main h1 {
+    margin-top: 7rem;
+    font-family: 'Fugaz One', cursive;
+    font-size: 6rem;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+main button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: white;
+
+    padding: 1.1rem 2.6rem;
+    margin-top: 7rem;
+
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.section-header {
+    font-family: 'Fugaz One', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding: 5rem 10rem;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+}
+
+#about-me > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+#about-me > p {
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2) !important;
+    color: #5BA8EE !important;
+    margin-bottom: 2rem;
+}
+
+.li-header, .li-desc {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 100;
+}
+
+.li-header {
+    color: #003A9B;
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+}
+
+.li-desc {
+    color: #001435;
+    font-size: 1.4rem;
+}
+
+#about-me li {
+    margin-bottom: 8rem;
+}
+
+#about-me div > ul > li:nth-child(3) {
+    margin-bottom: 0rem;
+}
+
+#divider {
+    border: 1px solid #588EE8;
+    height: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#about-me div ul, #about-me #images {
+    width: 49%;
+}
+
+#about-me #images {
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me #images img {
+    width: 70%;
+}
+
+#about-me #images img:first-child {
+    margin-bottom: 10%;
+}
+
+#gredient-holder {
+    background: rgb(85,94,219);
+    background: linear-gradient(120deg, rgba(85,94,219,1) 0%, rgba(87,118,227,1) 35%, rgba(94,194,245,1) 100%);
+}
+
+#gredient-holder #about-me {
+    background: white !important;
+}
+
+#my-work {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 3.5rem;
+}
+
+#my-work .section-header {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 22%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    padding: 3.5rem 4.5rem;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #001435;
+
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 12px 11px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(12px);
+    border-radius: 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-width: 395px;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #003A9B;
+    margin-bottom: 3.5rem;
+}
+
+.card-description {
+    margin-bottom: 3rem;
+}
+
+.card button {
+    background: linear-gradient(265.55deg, #1761DD 0%, #2F5698 100%);
+    border-radius: 13px;
+    padding: 1rem 0rem;
+    width: 100%;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    margin-bottom: .5rem;
+}
+
+.card a {
+    font-style: italic;
+    font-weight: 300;
+    color: #02313C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+#dots {
+    margin-top: 10rem;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 100%;
+}
+
+.dot.filled {
+    background-color: white;
+}
+
+.dot:nth-child(2){
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
