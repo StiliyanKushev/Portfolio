@@ -171,7 +171,10 @@ main button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 8rem 3.5rem;
+    padding: 8rem 0rem;
+
+    z-index: 3;
+    position: relative;
 }
 
 #my-work .section-header {
@@ -184,12 +187,26 @@ main button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    position: relative;
+    left: -25px;
+}
+
+#empty {
+    width: 25px;
+}
+
+#dots {
+    margin-left: 25px;
+}
+
+.relative-holder {
+    position: relative;
 }
 
 .card {
     width: 22%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.9);
+    height: 31rem;
     backdrop-filter: blur(10px);
     box-sizing: border-box;
     padding: 3.5rem 4.5rem;
@@ -199,16 +216,22 @@ main button {
     font-weight: 100;
     color: #001435;
 
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 12px 11px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(12px);
-    border-radius: 13px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     min-width: 395px;
+    
+    border-radius: 13px;
+    /* border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(120deg, rgba(91,156,236,1) 0%, rgba(94,194,245,0) 100%) 1; */
+    background-clip: padding-box;
+    border: solid 3px transparent;
 }
 
 .card-title {
@@ -243,10 +266,6 @@ main button {
     font-size: 1.2rem;
 }
 
-#dots {
-    margin-top: 10rem;
-}
-
 .dot {
     width: 25px;
     height: 25px;
@@ -261,4 +280,15 @@ main button {
 .dot:nth-child(2){
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
+}
+
+#left-blob {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 10%;
+}
+
+#right-blob {
+    position: absolute;
+    right: 0px;
 }
