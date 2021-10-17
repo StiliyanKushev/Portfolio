@@ -40,6 +40,7 @@ main {
     color: white;
 
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    min-height: 680px;
 }
 
 main h1 {
@@ -66,7 +67,7 @@ main button {
     margin-top: 7rem;
 
     background-color: transparent;
-    border: 4px solid white;
+    border: 2px solid white;
     border-radius: 20px;
 }
 
@@ -118,6 +119,7 @@ main button {
 .li-desc {
     color: #001435;
     font-size: 1.4rem;
+    word-break: break-word;
 }
 
 #about-me li {
@@ -156,6 +158,7 @@ main button {
 }
 
 #gredient-holder {
+    overflow: hidden;
     background: rgb(85,94,219);
     background: linear-gradient(120deg, rgba(85,94,219,1) 0%, rgba(87,118,227,1) 35%, rgba(94,194,245,1) 100%);
 }
@@ -206,7 +209,7 @@ main button {
 
 .card {
     width: 22%;
-    height: 31rem;
+    height: 31.5rem;
     backdrop-filter: blur(10px);
     box-sizing: border-box;
     padding: 3.5rem 4.5rem;
@@ -316,7 +319,7 @@ main button {
 
 #lets-talk form {
     height: 500px;
-    background: #E4E4E4;
+    background: #f7f7f7;
     border-radius: 12px;
     width: 800px;
     overflow: hidden;
@@ -351,4 +354,272 @@ main button {
     height: 90px;
     box-sizing: border-box;
     padding: 1rem;
+}
+
+@media screen and (max-width:1650px){
+    .li-header {
+        font-size: 2.2rem;
+    }
+
+    .li-desc {
+        font-size: 1.2rem;
+    }
+
+    #about-me #images {
+        justify-content: space-evenly;
+    }
+
+    #about-me {
+        padding: 5rem 2rem;
+    }
+}
+
+@media screen and (max-width:1050px){
+    #divider, #images {
+        display: none !important;
+    }
+
+    #about-me li {
+        margin-bottom: 4rem;
+    }
+
+    main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #about-me {
+        min-height: fit-content;
+        height: fit-content !important;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    #about-me {
+        min-height: fit-content;
+        height: fit-content !important;
+    }
+
+    #divider, #images {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 4rem !important;
+    }
+
+    h2 {
+        font-size: 2.3rem !important;
+    }
+
+    nav ul {
+        font-size: 1rem;
+    }
+
+    main button {
+        font-size: 1rem;
+        padding: 1rem 2.3rem;
+    }
+}
+
+@media screen and (max-width:950px){
+    h1 {
+        font-size: 4.5rem !important;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    main button {
+        font-size: 1rem;
+        padding: 1rem 2.3rem;
+    }
+
+    main {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    #about-me {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+}
+
+@media screen and (max-height: 750px){
+    main {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    #about-me {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .section-header {
+        font-size: 3rem;
+    }
+
+    .li-header {
+        font-size: 1.8rem;
+    }
+
+    .li-desc {
+        font-size: 1.2rem;
+    }
+
+    #about-me > div, #about-me > div ul {
+        width: 100%;
+    }
+
+    #lets-talk form {
+        width: 500px !important;
+    }
+
+    #lets-talk textarea {
+        font-size: 1.3rem;
+    }
+
+    #lets-talk button {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #lets-talk form, #form-inner {
+        width: 100% !important;
+        border: none !important;
+        border-radius: 0px !important;
+    }
+
+    #lets-talk textarea {
+        font-size: 1.3rem;
+    }
+
+    #lets-talk button {
+        font-size: .8rem;
+        width: 100%;
+    }
+
+    #lets-talk {
+        padding-bottom: 0px !important;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:720px){
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    nav ul {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:350px){
+    h1 {
+        font-size: 2.3rem !important;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.4rem !important;
+    }
+
+    main button {
+        font-size: .9rem;
+        padding: .7rem 2rem;
+        border-radius: 10px;
+        border-width: 2px;
+    }
+
+    .section-header {
+        font-size: 2.2rem;
+    }
+
+    .li-desc {
+        font-size: 1rem;
+    }
+
+    .li-header {
+        font-size: 1.4rem;        
+    }
+
+    #lets-talk textarea {
+        font-size: 1rem !important;
+    }
+
+    #lets-talk button {
+        font-size: .7rem !important;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #lets-talk form {
+        width: 650px;
+    }
+
+    #lets-talk textarea {
+        font-size: 1.4rem;
+    }
+
+    #lets-talk button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 930px) {
+    #lets-talk {
+        height: fit-content !important;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .card-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-description {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        padding: 3rem 3rem !important;
+        min-width: 300px !important;
+        height: 25rem !important;
+    }
+
+    .card button {
+        font-size: .8rem;
+    }
+
+    .card a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .card {
+        margin: 2rem;
+    }
+
+    #cards {
+        left: 0px;
+        flex-wrap: wrap;
+    }
+
+    .empty, #dots {
+        display: none;
+    }
+
+    #my-work {
+        height: fit-content;
+        min-height: fit-content;
+    }
 }
