@@ -577,6 +577,10 @@ main button {
     #lets-talk {
         height: fit-content !important;
     }
+
+    #my-work {
+        height: fit-content !important;
+    }
 }
 
 @media screen and (max-width: 1450px) {
